@@ -91,41 +91,41 @@ stirdata:racCode a rdf:Property ;
     rdfs:range xsd:string .
 
 #schema.org hacks
-schema:foundingDate # a rdf:Property ;
-#    :domainIncludes :Organization ;
-#    :rangeIncludes :Date ;
-    rdfs:domain schema:Organization ;
-    rdfs:range xsd:date .
+# schema:foundingDate # a rdf:Property ;
+# #    :domainIncludes :Organization ;
+# #    :rangeIncludes :Date ;
+#     rdfs:domain schema:Organization ;
+#     rdfs:range xsd:date .
 
-schema:dissolutionDate # a rdf:Property ;
-#    :domainIncludes :Organization ;
-#    :rangeIncludes :Date ;
-    rdfs:domain schema:Organization ;
-    rdfs:range xsd:date .
+# schema:dissolutionDate # a rdf:Property ;
+# #    :domainIncludes :Organization ;
+# #    :rangeIncludes :Date ;
+#     rdfs:domain schema:Organization ;
+#     rdfs:range xsd:date .
 
-schema:email # a rdf:Property ;
-#    :domainIncludes :ContactPoint,
-#        :Organization,
-#        :Person ;
-#    :rangeIncludes :Text ;
-    rdfs:domain schema:Organization ;
-    rdfs:range xsd:string .
+# schema:email # a rdf:Property ;
+# #    :domainIncludes :ContactPoint,
+# #        :Organization,
+# #        :Person ;
+# #    :rangeIncludes :Text ;
+#     rdfs:domain schema:Organization ;
+#     rdfs:range xsd:string .
 
-schema:telephone # a rdf:Property ;
-#    :domainIncludes :ContactPoint,
-#        :Organization,
-#        :Person,
-#        :Place ;
-#    :rangeIncludes :Text ;
-    rdfs:domain schema:Organization ;
-    rdfs:range xsd:string .
+# schema:telephone # a rdf:Property ;
+# #    :domainIncludes :ContactPoint,
+# #        :Organization,
+# #        :Person,
+# #        :Place ;
+# #    :rangeIncludes :Text ;
+#     rdfs:domain schema:Organization ;
+#     rdfs:range xsd:string .
 
-schema:url # a rdf:Property ;
-#    :domainIncludes :Thing ;
-#    :rangeIncludes :URL ;
-    rdfs:domain schema:Organization ;
-    rdfs:range xsd:string .
+# schema:url # a rdf:Property ;
+# #    :domainIncludes :Thing ;
+# #    :rangeIncludes :URL ;
+#     rdfs:domain schema:Organization ;
+#     rdfs:range xsd:string .
 
-dcterms:creator # a rdf:Property ;
-#    dcam:rangeIncludes dcterms:Agent ;
-    rdfs:range dcterms:Agent .
+# dcterms:creator # a rdf:Property ;
+# #    dcam:rangeIncludes dcterms:Agent ;
+#     rdfs:range dcterms:Agent .
