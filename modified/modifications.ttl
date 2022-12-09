@@ -13,59 +13,10 @@
 @prefix m8g: <http://data.europa.eu/m8g/> .
 @prefix stirdata: <https://w3id.org/stirdata/vocabulary/> .
 
-stirdata:abbreviatedName a rdf:Property ;
-    rdfs:label "Abbreviated name of the company"@en ;
-    rdfs:domain legal:LegalEntity ;
-    rdfs:range rdf:langString .
-
-stirdata:tradingName a rdf:Property ;
-    rdfs:label "Trading name of the company"@en ;
-    rdfs:domain legal:LegalEntity ;
-    rdfs:range rdf:langString .
-
 #Find it somewhere?
 legal:legalIdentifier a rdf:Property ;
     rdfs:domain legal:LegalEntity ;
     rdfs:range adms:Identifier .
-
-stirdata:taxIdentifier a rdf:Property ;
-    rdfs:label "Tax identifier"@en ;
-    rdfs:domain legal:LegalEntity ;
-    rdfs:range adms:Identifier .
-
-stirdata:leiCode a rdf:Property ;
-    rdfs:label "LEI code"@en ;
-    rdfs:domain legal:LegalEntity ;
-    rdfs:range xsd:string .
-
-#schema.org
-schema:sameAs a rdf:Property .
-
-schema:foundingDate a rdf:Property ;
-    rdfs:range xsd:date .
-
-schema:dissolutionDate a rdf:Property ;
-    rdfs:range xsd:date .
-
-schema:email a rdf:Property .
-
-schema:telephone a rdf:Property .
-
-schema:url a rdf:Property .
-
-
-#Code-list!
-stirdata:primaryActivity a rdf:Property ;
-    rdfs:domain legal:LegalEntity ;
-    rdfs:range skos:Concept .
-
-stirdata:secondaryActivity a rdf:Property ;
-    rdfs:domain legal:LegalEntity ;
-    rdfs:range skos:Concept .
-
-stirdata:auxiliaryActivity a rdf:Property ;
-    rdfs:domain legal:LegalEntity ;
-    rdfs:range skos:Concept .
 
 #This is in UML, but nowhere in data
 legal:LegalEntity rdfs:subClassOf org:Organization .
@@ -75,22 +26,8 @@ legal:registeredAddress a rdf:Property ;
     rdfs:domain legal:LegalEntity ;
     rdfs:range locn:Address .
 
-stirdata:postalAddress a rdf:Property ;
-    rdfs:label "Postal address"@en ;
-    rdfs:domain legal:LegalEntity ;
-    rdfs:range locn:Address .
-
-stirdata:streetAddress a rdf:Property ;
-    rdfs:label "Street address"@en ;
-    rdfs:domain legal:LegalEntity ;
-    rdfs:range locn:Address .
-
-stirdata:racCode a rdf:Property ;
-    rdfs:label "Registration Authority Code"@en ;
-    rdfs:domain dcterms:Agent ;
-    rdfs:range xsd:string .
-
 #schema.org hacks
+
 # schema:foundingDate # a rdf:Property ;
 # #    :domainIncludes :Organization ;
 # #    :rangeIncludes :Date ;
