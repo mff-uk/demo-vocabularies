@@ -20,7 +20,10 @@ legal:legalIdentifier a rdf:Property ;
     rdfs:range adms:Identifier .
 
 #This is in UML, but nowhere in data
-legal:LegalEntity rdfs:subClassOf org:Organization .
+legal:LegalEntity rdfs:subClassOf org:FormalOrganization.
+
+#Necessary for schema.org properties to be usable
+legal:LegalEntity rdfs:subClassOf schema:Organization .
 
 #Missing in RDF vocab definitions
 legal:registeredAddress a rdf:Property ;
@@ -32,6 +35,7 @@ legal:registeredAddress a rdf:Property ;
 m8g:identifies rdfs:label "identifies"@en .
 
 #schema.org hacks
+legal:legalEntity rdfs:subClassOf
 
 # schema:foundingDate # a rdf:Property ;
 # #    :domainIncludes :Organization ;
