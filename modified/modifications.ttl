@@ -15,6 +15,7 @@
 
 #Find it somewhere?
 legal:legalIdentifier a rdf:Property ;
+    rdfs:label "Identifier"@en ;
     rdfs:domain legal:LegalEntity ;
     rdfs:range adms:Identifier .
 

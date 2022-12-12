@@ -35,14 +35,17 @@ stirdata:leiCode a rdf:Property ;
 
 #Code-list!
 stirdata:primaryActivity a rdf:Property ;
+    rdfs:label "Primary legal entity activity"@en ;
     rdfs:domain legal:LegalEntity ;
     rdfs:range skos:Concept .
 
 stirdata:secondaryActivity a rdf:Property ;
+    rdfs:label "Secondary legal entity activity"@en ;
     rdfs:domain legal:LegalEntity ;
     rdfs:range skos:Concept .
 
 stirdata:auxiliaryActivity a rdf:Property ;
+    rdfs:label "Auxiliary legal entity activity"@en ;
     rdfs:domain legal:LegalEntity ;
     rdfs:range skos:Concept .
 
