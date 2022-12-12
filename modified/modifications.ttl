@@ -34,9 +34,6 @@ legal:registeredAddress a rdf:Property ;
 #Missing in RDF vocab definitions
 m8g:identifies rdfs:label "identifies"@en .
 
-#schema.org hacks
-legal:legalEntity rdfs:subClassOf
-
 # schema:foundingDate # a rdf:Property ;
 # #    :domainIncludes :Organization ;
 # #    :rangeIncludes :Date ;
