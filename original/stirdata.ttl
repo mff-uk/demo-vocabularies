@@ -28,11 +28,6 @@ stirdata:taxIdentifier a rdf:Property ;
     rdfs:domain legal:LegalEntity ;
     rdfs:range adms:Identifier .
 
-stirdata:leiCode a rdf:Property ;
-    rdfs:label "LEI code"@en ;
-    rdfs:domain legal:LegalEntity ;
-    rdfs:range xsd:string .
-
 #Code-list!
 stirdata:primaryActivity a rdf:Property ;
     rdfs:label "Primary legal entity activity"@en ;
