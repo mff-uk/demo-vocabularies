@@ -26,6 +26,12 @@ legal:LegalEntity rdfs:subClassOf org:FormalOrganization.
 legal:LegalEntity rdfs:subClassOf schema:Organization .
 
 #Missing in RDF vocab definitions
+m8g:registeredAddress a rdf:Property ;
+    rdfs:label "Registered address"@en ;
+    rdfs:domain legal:LegalEntity ;
+    rdfs:range locn:Address .
+
+#Missing in RDF vocab definitions
 m8g:identifies rdfs:label "identifies"@en .
 
 # schema:foundingDate # a rdf:Property ;
