@@ -12,3 +12,16 @@
 
 ## Custom vocabularies
 - [necessary vocabulary modifications](modified/modifications.ttl)
+
+## For RDFS vocabulary specification in [Dataspecer RDFS branch](https://feature-cim-adapters-and-rdf.dataspecer.pages.dev/):
+```
+https://mff-uk.github.io/demo-vocabularies/original/adms.ttl
+https://mff-uk.github.io/demo-vocabularies/original/dublin_core_terms.ttl
+https://mff-uk.github.io/demo-vocabularies/original/legal.ttl
+https://mff-uk.github.io/demo-vocabularies/original/locn.ttl
+https://mff-uk.github.io/demo-vocabularies/original/org.ttl
+https://mff-uk.github.io/demo-vocabularies/original/regorg.ttl
+https://mff-uk.github.io/demo-vocabularies/original/schema.ttl
+https://mff-uk.github.io/demo-vocabularies/original/stirdata.ttl
+https://mff-uk.github.io/demo-vocabularies/modified/modifications.ttl
+```
