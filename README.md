@@ -1,15 +1,15 @@
 # Common RDF vocabularies for [Dataspecer](https://dataspecer.com) demo
 
 ## Existing vocabularies
-- [adms](original/adms.ttl), [source](https://www.w3.org/ns/adms)
-- [dcterms](original/dublin_core_terms.ttl), [source](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/dublin_core_terms.ttl)
-- [legal](original/legal.ttl), [source](https://semiceu.github.io/Core-Business-Vocabulary/releases/2.00/voc/core-business-ap.ttl)
-- [locn](original/locn.ttl), [source](https://semiceu.github.io/Core-Location-Vocabulary/releases/2.0.1/voc/core-location-ap.ttl)
-- [org](original/org.ttl), [source](https://www.w3.org/ns/org)
-- [regorg](original/regorg.ttl), [source](http://www.w3.org/ns/regorg)
-- [skos](original/skos.rdf), [source](http://www.w3.org/TR/skos-reference/skos.rdf)
-- [schema.org](original/schema.ttl), [source](https://schema.org/version/latest/schemaorg-current-https.ttl)
-- [stirdata](original/stirdata.ttl), [source]()
+- [adms](https://www.w3.org/ns/adms), [cache](original/adms.ttl)
+- [dcterms](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/dublin_core_terms.ttl), [cache](original/dublin_core_terms.ttl)
+- [core-business](https://semiceu.github.io/Core-Business-Vocabulary/releases/2.00/voc/core-business-ap.ttl), [cache](original/legal.ttl)
+- [core-location](https://semiceu.github.io/Core-Location-Vocabulary/releases/2.0.1/voc/core-location-ap.ttl), [cache](original/locn.ttl)
+- [org](https://www.w3.org/ns/org), [cache](original/org.ttl)
+- [regorg](https://www.w3.org/ns/regorg), [cache](original/regorg.ttl)
+- [skos](https://www.w3.org/TR/skos-reference/skos.rdf), [cache](original/skos.rdf)
+- [schema.org](https://schema.org/version/latest/schemaorg-current-https.ttl), [cache](original/schema.ttl)
+- [stirdata](https://stirdata.github.io/data-specification/stirdata.ttl), [cache](original/stirdata.ttl)
 
 ## Custom vocabularies
 - [necessary vocabulary modifications](modified/modifications.ttl)
