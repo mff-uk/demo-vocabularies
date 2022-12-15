@@ -7,6 +7,7 @@
 - [locn](original/locn.ttl)
 - [org](original/org.ttl)
 - [regorg](original/regorg.ttl)
+- [skos](original/skos.rdf)
 - [schema.org](original/schema.ttl)
 - [stirdata](original/stirdata.ttl)
 
@@ -21,6 +22,7 @@ https://mff-uk.github.io/demo-vocabularies/original/legal.ttl
 https://mff-uk.github.io/demo-vocabularies/original/locn.ttl
 https://mff-uk.github.io/demo-vocabularies/original/org.ttl
 https://mff-uk.github.io/demo-vocabularies/original/regorg.ttl
+https://mff-uk.github.io/demo-vocabularies/original/skos.rdf
 https://mff-uk.github.io/demo-vocabularies/original/schema.ttl
 https://mff-uk.github.io/demo-vocabularies/original/stirdata.ttl
 https://mff-uk.github.io/demo-vocabularies/modified/modifications.ttl
