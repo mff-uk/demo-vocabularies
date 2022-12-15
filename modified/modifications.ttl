@@ -25,14 +25,21 @@ legal:LegalEntity rdfs:subClassOf org:FormalOrganization.
 #Necessary for schema.org properties to be usable
 legal:LegalEntity rdfs:subClassOf schema:Organization .
 
-#Missing in RDF vocab definitions
+#Missing in Core vocabularies definitions
 m8g:registeredAddress a rdf:Property ;
     rdfs:label "Registered address"@en ;
     rdfs:domain legal:LegalEntity ;
     rdfs:range locn:Address .
 
-#Missing in RDF vocab definitions
+#Missing in Core vocabularies definitions
 m8g:identifies rdfs:label "identifies"@en .
+
+#Wrongly defined with https instead of http in Core Business Vocabulary 2.00
+m8g:identifies a rdf:Property, owl:ObjectProperty;
+  rdfs:domain <http://www.w3.org/ns/adms#Identifier>;
+  rdfs:isDefinedBy <https://data.europa.eu/m8g>;
+  rdfs:range <http://www.w3.org/ns/legal#LegalEntity> .
+
 
 # schema:foundingDate # a rdf:Property ;
 # #    :domainIncludes :Organization ;
