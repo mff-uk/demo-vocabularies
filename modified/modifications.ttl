@@ -25,20 +25,22 @@ legal:LegalEntity rdfs:subClassOf org:FormalOrganization.
 #Necessary for schema.org properties to be usable
 legal:LegalEntity rdfs:subClassOf schema:Organization .
 
-#Missing in Core vocabularies definitions
-m8g:registeredAddress a rdf:Property ;
-    rdfs:label "Registered address"@en ;
-    rdfs:domain legal:LegalEntity ;
-    rdfs:range locn:Address .
+#Missing in Core vocabularies definitions but dereferencable
+m8g:registeredAddress a rdf:Property,
+        owl:ObjectProperty ;
+    rdfs:label "registered address"@en ;
+    rdfs:comment "The registered address relationship links a Resource with the legally registered Address."@en ;
+    rdfs:isDefinedBy <http://data.europa.eu/m8g> .
 
 #Missing in Core vocabularies definitions
-m8g:identifies rdfs:label "identifies"@en .
+#m8g:identifies rdfs:label "identifies"@en .
 
-#Wrongly defined with https instead of http in Core Business Vocabulary 2.00
-m8g:identifies a rdf:Property, owl:ObjectProperty;
-  rdfs:domain <http://www.w3.org/ns/adms#Identifier>;
-  rdfs:isDefinedBy <https://data.europa.eu/m8g>;
-  rdfs:range <http://www.w3.org/ns/legal#LegalEntity> .
+#Wrongly defined with https instead of http in Core Business Vocabulary 2.00. Dereferencable ok.
+m8g:identifies a rdf:Property,
+        owl:ObjectProperty ;
+    rdfs:label "identifies"@en ;
+    rdfs:comment "The entity that is referenced by the Identifier."@en ;
+    rdfs:isDefinedBy <http://data.europa.eu/m8g> .
 
 
 # schema:foundingDate # a rdf:Property ;
