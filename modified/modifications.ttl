@@ -97,3 +97,4 @@ m8g:identifies a rdf:Property,
 <http://www.w3.org/ns/locn#postCode> a owl:DatatypeProperty.
 <http://www.w3.org/ns/locn#postName> a owl:DatatypeProperty.
 <http://www.w3.org/ns/locn#thoroughfare> a owl:DatatypeProperty.
+<http://www.w3.org/ns/legal#legalName> a owl:DatatypeProperty.
