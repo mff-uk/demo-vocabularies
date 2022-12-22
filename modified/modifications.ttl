@@ -81,3 +81,19 @@ m8g:identifies a rdf:Property,
 # dcterms:creator # a rdf:Property ;
 # #    dcam:rangeIncludes dcterms:Agent ;
 #     rdfs:range dcterms:Agent .
+
+# Workaround for https://github.com/mff-uk/dataspecer/issues/270
+<http://data.europa.eu/m8g/adminUnit> a owl:DatatypeProperty.
+<http://www.opengis.net/ont/geosparql#asGML> a owl:DatatypeProperty.
+<http://www.opengis.net/ont/geosparql#asWKT> a owl:DatatypeProperty.
+<http://www.w3.org/ns/locn#addressArea> a owl:DatatypeProperty.
+<http://www.w3.org/ns/locn#addressID> a owl:DatatypeProperty.
+<http://www.w3.org/ns/locn#adminUnitL1> a owl:DatatypeProperty.
+<http://www.w3.org/ns/locn#adminUnitL2> a owl:DatatypeProperty.
+<http://www.w3.org/ns/locn#fullAddress> a owl:DatatypeProperty.
+<http://www.w3.org/ns/locn#locatorDesignator> a owl:DatatypeProperty.
+<http://www.w3.org/ns/locn#locatorName> a owl:DatatypeProperty.
+<http://www.w3.org/ns/locn#poBox> a owl:DatatypeProperty.
+<http://www.w3.org/ns/locn#postCode> a owl:DatatypeProperty.
+<http://www.w3.org/ns/locn#postName> a owl:DatatypeProperty.
+<http://www.w3.org/ns/locn#thoroughfare> a owl:DatatypeProperty.
