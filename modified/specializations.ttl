@@ -1,0 +1,27 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix legal: <http://www.w3.org/ns/legal#> .
+@prefix m8g: <http://data.europa.eu/m8g/> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+
+legal:legalName rdfs:domain legal:LegalEntity ;
+    rdfs:range rdf:langString .
+
+m8g:registeredAddress rdfs:domain legal:LegalEntity ;
+    rdfs:range locn:Address .
+
+skos:notation rdfs:domain adms:Identifier .
+
+locn:addressArea rdfs:domain locn:Address .
+locn:postCode rdfs:domain locn:Address .
+locn:postName rdfs:domain locn:Address .
+locn:locatorDesignator rdfs:domain locn:Address .
+locn:adminUnitL1 rdfs:domain locn:Address .
+locn:adminUnitL2 rdfs:domain locn:Address .
+locn:thoroughfare rdfs:domain locn:Address .
+locn:addressID rdfs:domain locn:Address .
+locn:fullAddress rdfs:domain locn:Address .
+locn:locatorName rdfs:domain locn:Address .
+locn:poBox rdfs:domain locn:Address .
