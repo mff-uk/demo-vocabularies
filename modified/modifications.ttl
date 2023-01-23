@@ -98,3 +98,23 @@ m8g:identifies a rdf:Property,
 <http://www.w3.org/ns/locn#postName> a owl:DatatypeProperty.
 <http://www.w3.org/ns/locn#thoroughfare> a owl:DatatypeProperty.
 <http://www.w3.org/ns/legal#legalName> a owl:DatatypeProperty.
+
+#Temporary workaround for insufficient rdfs:domain and rdfs:range definitions. To be investigated further, perhaps replaced by SHACL rules.
+legal:legalName rdfs:domain legal:LegalEntity .
+
+m8g:registeredAddress rdfs:domain legal:LegalEntity ;
+    rdfs:range locn:Address .
+
+skos:notation rdfs:domain adms:Identifier .
+
+locn:addressArea rdfs:domain locn:Address .
+locn:postCode rdfs:domain locn:Address .
+locn:postName rdfs:domain locn:Address .
+locn:locatorDesignator rdfs:domain locn:Address .
+locn:adminUnitL1 rdfs:domain locn:Address .
+locn:adminUnitL2 rdfs:domain locn:Address .
+locn:thoroughfare rdfs:domain locn:Address .
+locn:addressID rdfs:domain locn:Address .
+locn:fullAddress rdfs:domain locn:Address .
+locn:locatorName rdfs:domain locn:Address .
+locn:poBox rdfs:domain locn:Address .
